@@ -12,9 +12,6 @@
   "author": "maria",
   "license": "MIT",
   "dependencies": {
-    "antd": "^2.13.1",
-    "echarts-for-react": "^1.1.6",
-    "github-markdown-css": "^2.4.0",
     "koa": "2.2.0",
     "koa-router": "7.1.0",
     "koa-static": "3.0.0",
