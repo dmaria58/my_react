@@ -1,6 +1,7 @@
-
 'use strict';
-import React, {Component, PropTypes} from 'react';
+/*
+*style、function单独处理
+**/
 var ReactDOMComponent =  {
   mountComponent:function(_currentElement) {
     var result;
@@ -14,9 +15,14 @@ var ReactDOMComponent =  {
         }
         else{
           if(typeof props.children=="object"){
-            props.children.forEach( child=>{
-              result.appendChild(_this.mountComponent(child));
-            })
+            if(props.children.length>1){
+              props.children.forEach( child=>{              
+                result.appendChild(_this.mountComponent(child));
+              })
+            }
+            else{
+                result.appendChild(_this.mountComponent(props.children));
+            }
           }else{
             result.innerHTML=props.children;
           }
