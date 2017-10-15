@@ -1,5 +1,6 @@
 'use strict';
 var ReactDOMComponent = require('./reactDOMComponent.js');
+//测试下账号
 /*import React, {Component, PropTypes} from 'react';
 var topLevelRootCounter = 1;
 var TopLevelWrapper = function () {
