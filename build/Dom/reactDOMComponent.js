@@ -30,7 +30,12 @@ var ReactDOMComponent =  {
     var props = _currentElement.props;
     var _this=this;
     if ( _currentElement.type) {
-      result = document.createElement( _currentElement.type );
+      if(typeof _currentElement.type === "string"){
+        result = document.createElement( _currentElement.type );
+      }
+      else if(typeof _currentElement.type ==="function"){
+        result = document.createElement("div");
+      }
       props=_this._updateDomprops(props);
       for(var key in props ) {
         if(key!="children"){
