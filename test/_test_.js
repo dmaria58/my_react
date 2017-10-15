@@ -3,6 +3,7 @@ import React, {Component, PropTypes} from 'react';
 var reactDom = require('../build/Dom/reactDomentry.js');
 
 
+
 //var myReact= require('../build/Entry/reactEntry.js');
 //    document.body.appendChild(document.createElement('div'))
 var render=reactDom.render;
